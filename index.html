@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pustosh.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./CSS/stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://kit.fontawesome.com/112ad41b3f.js" crossorigin="anonymous"></script>
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: "Lato", sans-serif;
+  }
+
+  body,
+  html {
+      height: 100%;
+      color: #777;
+      line-height: 1;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+      background-image: url('./Images/bgimg-1.jpg');
+      min-height: 100%;
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+      background-image: url("./Images/bgimg-2.jpg");
+      min-height: 400px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+      background-image: url("./Images/bgimg-1.jpg");
+      min-height: 400px;
+  }
+</style>
+
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+    <a href="#New" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bolt"></i> New!</a>
+    <a href="#Listen" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-headphones" aria-hidden="true"></i> LISTEN</a>
+    <a href="#Watch" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-eye" aria-hidden="true"></i> WATCH</a>
+    <a href="#touch" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hand-o-up" aria-hidden="true"></i> TOUCH</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#New" class="w3-bar-item w3-button" onclick="toggleFunction()">New!</a>
+    <a href="#Listen" class="w3-bar-item w3-button" onclick="toggleFunction()">LISTEN</a>
+    <a href="#Watch" class="w3-bar-item w3-button" onclick="toggleFunction()">WATCH</a>
+    <a href="#touch" class="w3-bar-item w3-button" onclick="toggleFunction()">TOUCH</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space: nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PUSTOSH</span>
+  </div>
+</div>
+
+
+<!-- Container (New Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-black" id="New">
+  <h3 class="w3-center"> </h3>
+  <p class="w3-center"></p>
+  <p class="w3-center"><em> </em></p>
+
+<!-- Image header -->
+<div class="w3-display-container w3-container">
+  <img src="./Images/new-video.jpg" alt="Peace" style="width:100%">
+  <div class="w3-display-topmiddle w3-center">
+    <h1 class="w3-jumbo w3-hide-small">New Music Video!</h1>
+    <h1 class="w3-hide-large w3-hide-medium">New Music Video!</h1>
+    <h1 class="w3-hide-small">Reflexive Documentary about life before the war</h1>
+    <p><a href="https://www.youtube.com/watch?v=eloMuD0zqzw" class="w3-button w3-white w3-padding-large w3-large">WATCH NOW</a></p>
+  </div>
+</div>
+
+
+  <div class="w3-container w3-text-grey" id="jeans">
+  
+  </div>
+<!-- Second Parallax Image with Listen Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Listen Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-black" id="Listen">                        
+  <h3 class="w3-center">LISTEN</h3>
+  <p class="w3-center"><em>Find the melody of your own emptiness</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops, and desktops. Will stack on mobile devices/small screens (100% width) -->
+    
+  <div class="w3-row-padding w3-center">
+    <style>
+      .w3-row-padding.w3-center .w3-col {
+          margin-bottom: 16px;
+      }
+  
+      .w3-button.w3-padding-large {
+          padding: 8px 16px;
+      }
+  </style>
+      <!-- Buttons, links for the music -->
+      <div class="w3-col m3">
+        <a href="https://open.spotify.com/artist/4GyKlZqozMeBC4q7qz1SFT" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fab fa-spotify" style="color: #5bda07;"></i> Spotify
+
+        </a> 
+      </div>
+      
+      <div class="w3-col m3">
+        <a href="https://music.apple.com/us/artist/pustosh/1478461779" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fab fa-apple"></i> Apple Music
+        </a>
+      </div>
+      
+      <div class="w3-col m3">
+        <a href="https://soundcloud.com/pustosh" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fab fa-soundcloud"></i> Soundcloud
+        </a>
+      </div>
+  
+      <div class="w3-col m3">
+        <a href="https://pustoshband.bandcamp.com/" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fab fa-bandcamp"style="color: #629aa9;"></i> Bandcamp
+        </a>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <a href="https://www.deezer.com/en/artist/12368522" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fa-brands fa-deezer"></i> Deezer
+        </a>
+      </div>
+    
+      <div class="w3-col m3">
+        <a href="https://music.youtube.com/channel/UCP1hht1DsC5JbMm9Zb0JouA" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fab fa-youtube" style="color: #e20505;"></i> YouTube Music
+        </a>
+      </div>
+    
+      <div class="w3-col m3">
+        <a href="https://amazon.com/music/player/artists/B07114NDL6/pustosh?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_zYaetoqwjZAoxb1M396tMoAAt" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fab fa-amazon" style="color: #FF9900;"></i> Amazon Music
+        </a>
+      </div>
+    
+      <div class="w3-col m3">
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjIxsTu_eP_AhW3EFkFHUeSBE4QgD16BAgeEAk&url=http%3A%2F%2Fwww.pandora.com%2F%3Fsc%3DmiR9089466&usg=AOvVaw055qFt-NOShiqWU6VRHl-1&opi=89978449" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="margin-top:20px; width:60%">
+          <i class="fas fa-headphones"></i> Pandora
+        </a>
+      </div>
+  
+    <!-- Buttons, links for the music end  -->
+    
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Watch Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Watch Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-black" id="Watch">
+  <h3 class="w3-center">WATCH</h3>
+  <p class="w3-center"><em>Try to look at us the way you look in the mirror </em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops, and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <div class="w3-responsive">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/eloMuD0zqzw" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-responsive">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/4cJ8PoL9XWM" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-responsive">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/4N_sypO6iqM" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <div class="w3-responsive">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/pmzpI0hkV1w" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-responsive">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/aaP_G1vQ_Gw" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-responsive">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/a4Kp3VLzwBI" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Touch Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Touch Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-black" id="touch">
+  <h3 class="w3-center">TOUCH</h3>
+  <p class="w3-center"><em>Try the emptiness with your fingertips</em></p><br>
+
+  <!-- Responsive Grid. Three columns on tablets, laptops, and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <a href="https://pustoshband.bandcamp.com/merch/p-bag">
+        <img src="./Images/Pustosh-Totebag.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pustosh Totebag">
+      </a>
+    </div>
+
+    <div class="w3-col m4">
+      <a href="https://pustoshband.bandcamp.com/merch/p-shirt">
+        <img src="./Images/Pustosh-Tshirt.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pustosh T-Shirt">
+      </a>
+    </div>
+
+    <div class="w3-col m4">
+      <a href="https://pustoshband.bandcamp.com/merch/p-sweatshirt">
+        <img src="./Images/Pustosh-Sweatshirt.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pustosh Sweatshirt">
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal for full-size images on click -->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Contact Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center"><em>Fill this form if you would like to buy our merch, invite us to play on your gig or share your own nothing</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container w3-center"> <!-- Add w3-center class to center the image container -->
+      <img src="./Images/contact.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kyiv, UA<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: pustooosh@gmail.com<br>
+      </div>
+      <p></p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+      
+      <div class="w3-xlarge w3-section">
+        <a href="https://www.facebook.com/pustoshband/" target="_blank" class="w3-hover-opacity"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/pustoshband/?hl=en" target="_blank" class="w3-hover-opacity"><i class="fab fa-instagram"></i></a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
